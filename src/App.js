@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import "./App.scss";
-require("dotenv").config();
 
 function App() {
   return (
