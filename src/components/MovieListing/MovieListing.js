@@ -10,11 +10,11 @@ const MovieListing = () => {
 
   renderMovies =
     movies.Response === "True" ? (
-      movies.Search.map((movie, index) => {
-        <MovieCard key={index} data={movie} />;
-      })
+      movies.Search.map((movie, index) => (
+        <MovieCard key={index} data={movie} />
+      ))
     ) : (
-      <div className="moview-error">
+      <div className="movies-error">
         <h3>{movies.Error}</h3>
       </div>
     );
